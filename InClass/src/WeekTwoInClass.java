@@ -9,5 +9,6 @@ public class WeekTwoInClass {
         String newString = str3.substring(0,9);
 
         System.out.println(newString);
+        System.out.println(str1.toUpperCase());
     }
 }
