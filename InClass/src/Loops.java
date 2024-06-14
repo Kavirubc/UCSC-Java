@@ -18,15 +18,15 @@ public class Loops {
     }
 
     public static void printPattern(int num) {
-        for (int i = 0; i < num; i++) {
-            for (int j = 0; j < num; j++) {
-                if (i == j) { // Check for diagonal
-                    System.out.print("#");
+        for (int row = 0; row < num; row++) {
+            for (int column = 0; column < num; column++) {
+                if (row == column) { // Check for diagonal
+                    System.out.print(" # ");
                 } else {
-                    if ((i + j) % 2 == 0) {
-                        System.out.print("*");
+                    if ((row + column) % 2 == 0) {
+                        System.out.print(" * ");
                     } else {
-                        System.out.print("&");
+                        System.out.print(" & ");
                     }
                 }
             }
